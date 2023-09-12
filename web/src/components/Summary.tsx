@@ -5,36 +5,36 @@ import imgLogoMoney from '../assets/money.svg';
 export function Summary() {
     return (
         <div className="w-full max-w-6xl mx-auto px-6 grid grid-cols-3 gap-8 -mt-20">
-            <div>
+            <div className='bg-gray-600 rounded-md p-8'>
                 <header>
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-between items-center text-gray-300'>
                         <span>Entradas</span>
                         <ArrowUpCircle className='stroke-green-300' />
                     </div>
 
-                    <strong>R$ 17.400,00</strong>
+                    <strong className='block mt-4 text-[2rem]'>R$ 17.400,00</strong>
                 </header>
             </div>
 
-            <div>
+            <div className='bg-gray-600 rounded-md p-8'>
                 <header>
-                    <div>
+                    <div className='flex justify-between items-center text-gray-300'>
                         <span>Saídas</span>
                         <ArrowDownCircle className='stroke-red-300' />
                     </div>
 
-                    <strong>R$ 1.259,00</strong>
+                    <strong className='block mt-4 text-[2rem]'>R$ 1.259,00</strong>
                 </header>
             </div>
 
-            <div>
+            <div className='bg-green-700 rounded-md p-8'>
                 <header>
-                    <div>
+                    <div className='flex justify-between items-center text-gray-300'>
                         <span>Total</span>
                         <Image src={imgLogoMoney} alt='' width={28} height={28} />
                     </div>
 
-                    <strong>R$ 16.141,00</strong>
+                    <strong className='block mt-4 text-[2rem]'>R$ 16.141,00</strong>
                 </header>
             </div>
         </div>
